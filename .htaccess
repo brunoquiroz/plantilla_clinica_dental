@@ -23,3 +23,8 @@
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
 </IfModule>
+
+# Forzar el MIME type correcto para JS, CSS y WASM
+AddType application/javascript .js
+AddType text/css .css
+AddType application/wasm .wasm
